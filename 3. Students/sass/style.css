@@ -1,4 +1,56 @@
-/* ALL OF THE BODY AND FOOTER AND HEADER HERE */
-/* GENERAL STYLING*/
-/* ALL OF THE VARIABLES */
-/* ALL OF THE MIXINS *//*# sourceMappingURL=style.css.map */
+body {
+  font-style: "Courier New", Courier, monospace;
+  background-color: #E6F2FF;
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: left;
+}
+
+th {
+  text-align: center;
+}
+
+th:last-child, td:last-child {
+  text-align: right;
+}
+
+td {
+  border: 1px solid #524c4c;
+  padding: 8px;
+}
+
+/*REIKIA PATARIMO KAIP GERIAU TOKIUS SUNESTINT*/
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 10em;
+}
+.table__table {
+  color: #524c4c;
+  border: 1px solid #524c4c;
+  padding: 1rem;
+}
+
+.button {
+  display: grid;
+  flex-direction: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.button__name, .button__abc, .button__grade {
+  height: 2rem;
+  width: 110%;
+  background-color: #FFD6E7;
+  border: 1px solid #FFD6E7;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */

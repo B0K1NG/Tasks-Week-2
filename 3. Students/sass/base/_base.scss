@@ -1,1 +1,28 @@
-/* ALL OF THE BODY AND FOOTER AND HEADER HERE */
+@import '../utilities/variables';
+
+body {
+    font-style: $font-stack;
+    background-color: #E6F2FF;
+    margin: $margin;
+}
+
+th, td {
+    text-align: left;
+    
+}
+
+th {
+    text-align: center;
+    
+}
+
+th:last-child, td:last-child {
+    text-align: right;
+}
+
+td {
+    border: $border $container-color;
+    padding: 8px;
+}
+
+/*REIKIA PATARIMO KAIP GERIAU TOKIUS SUNESTINT*/

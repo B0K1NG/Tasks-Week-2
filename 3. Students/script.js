@@ -58,8 +58,9 @@ const students = [
     }
 ];
 
+const studentsBody = document.getElementById("studentsBody");
+
 const displayStudents = students => {
-    const studentsBody = document.getElementById("studentsBody");
     studentsBody.innerHTML = '';
 
 students.forEach(item => {
@@ -100,7 +101,7 @@ students.forEach(item => {
     };
 
     const filterByAlphabet = () => {
-        const sorted = students.sort((a,b) => a.firstName.localeCompare(b.firstName));
+        const sorted = students.sort((a,b) => a.lastName.localeCompare(b.lastName));
         displayStudents(sorted);
     };
 

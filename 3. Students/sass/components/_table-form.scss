@@ -1,1 +1,13 @@
-/* GENERAL STYLING*/
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+.table {
+    @include flexy;
+    margin-top: 10em;
+    &__table {
+        color: $text-color;
+        border: $border $container-color;
+        padding: 1rem;
+    }
+    
+}

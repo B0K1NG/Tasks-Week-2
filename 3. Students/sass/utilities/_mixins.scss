@@ -1,1 +1,15 @@
-/* ALL OF THE MIXINS */
+@mixin flexy($display: flex) {
+    display: $display;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+};
+
+@mixin gridy($display: grid) {
+    display: $display;
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+}

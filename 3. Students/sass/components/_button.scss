@@ -1,0 +1,20 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+.button {
+    @include gridy;
+    gap: 1rem;
+    
+
+    &__name, &__abc, &__grade {
+        height: 2rem;
+        width: 110%;
+        background-color: $btn-background-color;
+        border: $border $btn-background-color;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-weight: $btn-text-weight;
+        text-transform: $text-transform;
+    } 
+
+}
