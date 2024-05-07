@@ -1,9 +1,18 @@
 let peopleCount = 0;
+let canAddPeople = true;
 
 const formGroups = document.getElementById("formGroups");
 formGroups.disabled = true;
 
+const groupSection = document.getElementById('group')
+
+/* Add People Inputs Appear */
+
 addFn = () => {
+    if (!canAddPeople) {
+        return
+    }
+
     const input = document.getElementById("inputFields");
     const wrapper = document.createElement("div");
 
@@ -26,7 +35,19 @@ addFn = () => {
 
     if (peopleCount >= 5 && peopleCount <= 20) {
         formGroups.disabled = false;
+    } else {
+        formGroups.disabled = true;
     }
-}
+};
 
+/* Group Input Appearing */
+
+formGroups.addEventListener("click", function () {
+    if (groupSection.style.display === "none") {
+        groupSection.style.display = "block";
+        canAddPeople = false;
+    } else {
+        groupSection.style.display === "none";
+    }
+});
 
