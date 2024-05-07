@@ -48,6 +48,12 @@ formGroups.addEventListener("click", function () {
         canAddPeople = false;
     } else {
         groupSection.style.display === "none";
-    }
+    };
 });
 
+const proceedBtn = document.getElementById("proceedButton");
+
+proceedBtn.addEventListener("click", function () {
+    let groupCount = document.getElementById('groupCountInput').value;
+    groupCount = parseInt(groupCount);
+})
