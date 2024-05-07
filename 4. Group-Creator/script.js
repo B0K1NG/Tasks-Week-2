@@ -13,7 +13,7 @@ addFn = () => {
         return
     }
 
-    const input = document.getElementById("inputFields");
+    const input = document.getElementById("inputFields");   
     const wrapper = document.createElement("div");
 
     // First Name Input
@@ -51,4 +51,3 @@ formGroups.addEventListener("click", function () {
     }
 });
 
-//
