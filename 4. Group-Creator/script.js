@@ -56,4 +56,20 @@ const proceedBtn = document.getElementById("proceedButton");
 proceedBtn.addEventListener("click", function () {
     let groupCount = document.getElementById('groupCountInput').value;
     groupCount = parseInt(groupCount);
-})
+    const groupList = document.getElementById("groupList")
+
+    if (isNaN(groupCount)) {
+        alert("Please enter a valid number.");
+    } else if (groupCount < 1) {
+        alert("At least 1 group is required.")
+    } else if ( groupCount > peopleCount) {
+        alert("There cannot be more groups than the number of people.")
+    } else if (groupCount > 20) {
+        alert("There cannot have more than 20 groups.")
+    } else {
+        return true;
+    }
+    return false;
+
+    
+});
