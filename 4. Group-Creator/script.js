@@ -1,16 +1,16 @@
 let peopleCount = 0;
 let canAddPeople = true;
 
-const formGroups = document.getElementById("formGroups");
-formGroups.disabled = true;
+const formGroupsBtn = document.getElementById("formGroups");
+formGroupsBtn.disabled = true;
 
-const groupSection = document.getElementById('group')
+const groupSection = document.getElementById('group');
 
 /* Add People Inputs Appear */
 
-addFn = () => {
+const addFn = () => {
     if (!canAddPeople) {
-        return
+        return;
     }
 
     const input = document.getElementById("inputFields");   
@@ -34,20 +34,22 @@ addFn = () => {
     peopleCount += 1;
 
     if (peopleCount >= 5 && peopleCount <= 20) {
-        formGroups.disabled = false;
+        formGroupsBtn.disabled = false;
+        formGroupsBtn.style.display = "block";
     } else {
-        formGroups.disabled = true;
+        formGroupsBtn.disabled = true;
+        formGroupsBtn.style.display = "none";
     }
 };
 
 /* Group Input Appearing */
 
-formGroups.addEventListener("click", function () {
+formGroupsBtn.addEventListener("click", function () {
     if (groupSection.style.display === "none") {
         groupSection.style.display = "block";
         canAddPeople = false;
     } else {
-        groupSection.style.display === "none";
+        groupSection.style.display = "none";
     };
 });
 
@@ -56,20 +58,18 @@ const proceedBtn = document.getElementById("proceedButton");
 proceedBtn.addEventListener("click", function () {
     let groupCount = document.getElementById('groupCountInput').value;
     groupCount = parseInt(groupCount);
-    const groupList = document.getElementById("groupList")
+    const groupList = document.querySelector(".groupList");
 
     if (isNaN(groupCount)) {
         alert("Please enter a valid number.");
     } else if (groupCount < 1) {
-        alert("At least 1 group is required.")
-    } else if ( groupCount > peopleCount) {
-        alert("There cannot be more groups than the number of people.")
+        alert("At least 1 group is required.");
+    } else if (groupCount > peopleCount) {
+        alert("There cannot be more groups than the number of people.");
     } else if (groupCount > 20) {
-        alert("There cannot have more than 20 groups.")
+        alert("There cannot have more than 20 groups.");
     } else {
         return true;
     }
     return false;
-
-    
 });

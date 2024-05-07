@@ -1,0 +1,6 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+body {
+    @include gridy;
+}

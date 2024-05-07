@@ -1,0 +1,28 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+.container {
+
+    &__button {
+            @include border;
+            cursor: $hover;
+    }
+}
+
+.button {
+    padding-top: 1rem;
+    
+    &__form {
+        @include border;
+        cursor: $hover;
+    }
+}
+
+.groups {
+    padding-top: 1rem;
+    
+    &__proceedButton {
+        @include border;
+        cursor: $hover;
+    }
+}

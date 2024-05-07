@@ -1,0 +1,93 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+  margin-top: 100%;
+  margin-bottom: 0;
+}
+
+.container__input input[type=text] {
+  padding: 0.4rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.container__button {
+  background-color: lightgray;
+  padding: 0.4rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button {
+  padding-top: 1rem;
+}
+.button__form {
+  background-color: lightgray;
+  padding: 0.4rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.groups {
+  padding-top: 1rem;
+}
+.groups__proceedButton {
+  background-color: lightgray;
+  padding: 0.4rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.groups__proceedButton {
+  margin-top: 1rem;
+}
+
+@media (min-width: 475px) {
+  body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    margin-top: 70%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 640px) {
+  body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    margin-top: 50%;
+    margin-bottom: 10%;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    margin-top: 50%;
+    margin-bottom: 10%;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+}/*# sourceMappingURL=style.css.map */

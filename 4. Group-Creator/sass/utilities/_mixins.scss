@@ -1,0 +1,19 @@
+@import './variables';
+
+@mixin border() {
+    background-color: $background-color;
+    padding: $padding;
+    border: $border;
+    border-radius: $border-radius;
+    width: $width;
+};
+
+@mixin gridy($display: grid, $margin-top: 100%, $margin-bottom: 0){
+    display: $display;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}
+

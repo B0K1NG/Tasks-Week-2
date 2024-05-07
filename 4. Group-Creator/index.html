@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group-Creator</title>
+    <link rel="stylesheet" href="./sass/style.css">
 </head>
 <body>
 
@@ -13,17 +14,17 @@
     </section>
 
     <section class="button">
-      <button class="button__button" id="formGroups">Form Groups</button>
+      <button class="button__form" id="formGroups" style="display: none;">Form Groups</button>
     </section>
 
     <section class="groups" id="group" style="display: none;">
-        <label for="groupCountInput">Groups Count</label >
-        <input type="text" id="groupCountInput" name="group" >
-        <button id="proceedButton">Proceed</button>
+        <label for="groupCountInput">Groups Count: </label >
+        <input class="groups__input" type="text" id="groupCountInput" name="group" >
+        <button class="groups__proceedButton" id="proceedButton">Proceed</button>
     </section>
     
     
-    <ul id="groupList" style="display: none;"></ul>
+    <ul class="groupList" style="display: none;"></ul>
 
     <script src="script.js"></script>
 </body>

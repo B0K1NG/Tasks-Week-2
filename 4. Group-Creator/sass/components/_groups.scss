@@ -1,0 +1,8 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+.groups {
+    &__proceedButton {
+        margin-top: $margin-top;
+    }
+}

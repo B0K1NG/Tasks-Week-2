@@ -1,0 +1,12 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+.container {
+
+    &__input input[type="text"] {
+        padding: $padding;
+        border: $border;
+        border-radius: $border-radius;
+        margin-top: $margin-top;
+    }
+}
