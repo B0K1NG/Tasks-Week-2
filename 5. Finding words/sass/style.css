@@ -50,8 +50,24 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
 }
 .result__content {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+@media (min-width: 1024px) {
+  .area__text, .input__field, .result {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .area__text, .input__field, .result {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

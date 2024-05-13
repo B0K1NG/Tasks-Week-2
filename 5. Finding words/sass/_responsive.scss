@@ -1,0 +1,18 @@
+@import './utilities/variables';
+@import './utilities/mixins';
+
+@media (min-width: $medium-screen) {
+    .area__text, .input__field, .result {
+        font-size: 1.2rem;
+    }
+};
+
+@media (min-width: $large-screen) {
+    .area__text, .input__field, .result {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.2rem
+    }
+};

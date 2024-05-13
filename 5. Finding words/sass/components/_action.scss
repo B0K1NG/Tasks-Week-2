@@ -4,6 +4,8 @@
 .result {
         @include gridy;
     text-align: $align;
+    padding: $padding;
+    font-size: $font-size;
 
     &__content {
         width: fit-content;

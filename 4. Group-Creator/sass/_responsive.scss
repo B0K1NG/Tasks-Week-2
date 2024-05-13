@@ -5,22 +5,22 @@
     body {
         @include gridy($margin-top: 70%, $margin-bottom: 0);
     }
-}
+};
 
 @media (min-width: $small-screen) {
     body {
         @include gridy($margin-top: 50%, $margin-bottom: 10%);
     }
-}
+};
 
 @media (min-width: $medium-screen) {
     body {
         @include gridy($margin-top: 50%, $margin-bottom: 10%);
     }
-}
+};
 
 @media (min-width: $large-screen) {
     body {
         @include gridy($margin-top: 20%, $margin-bottom: 10%);
     }
-}
+};
