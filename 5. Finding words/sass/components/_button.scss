@@ -1,0 +1,12 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+.btn {
+        @include gridy;
+
+    &__action {
+        @include border;
+        background-color: $background;
+        cursor: $hover;
+    }
+}

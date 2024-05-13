@@ -1,0 +1,11 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+.area {
+        @include gridy;
+
+    &__text {
+        font-size: $font-size;
+        text-align: $align;
+    }
+}

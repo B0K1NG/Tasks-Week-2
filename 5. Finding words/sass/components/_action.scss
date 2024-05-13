@@ -1,0 +1,11 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+.result {
+        @include gridy;
+    text-align: $align;
+
+    &__content {
+        width: fit-content;
+    }
+}

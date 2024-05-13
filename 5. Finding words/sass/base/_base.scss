@@ -1,0 +1,11 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+body{
+    font-family: $font-stack;
+}
+
+h1 {
+    @include gridy;
+}
+

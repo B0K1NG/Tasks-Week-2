@@ -1,0 +1,12 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+.input {
+    @include gridy;
+    @include padding;
+    
+    &__field {
+        @include border;
+        font-size: $font-size;
+    }
+}
