@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Finder</title>
+    <link rel="stylesheet" href="./sass/style.css">
     <style>
         .highlight {
             background-color: yellowgreen; 
@@ -11,11 +12,25 @@
     </style>
 </head>
 <body>
-    <h1>Text Search Highlighter</h1>
-    <textarea id="text-input" rows="10" cols="50" placeholder="Enter Your Text Here...."></textarea> <br>
-    <input type="text" id="search-input" placeholder="Enter The Search Term.."><br>
-    <button onclick="highlightText()">Search For The Result</button>
-    <div id="result"></div>
+    <section class="header">
+    <h1 class="header__title">Text Search Highlighter</h1>
+</section>
+
+    <section class="area">
+    <textarea class="area__text" id="text-input" rows="10" cols="50" placeholder="Enter Your Text Here...."></textarea> <br>
+</section>
+
+    <section class="input">
+        <input class="input__field" type="text" id="search-input" placeholder="Enter The Search Term.."><br>
+</section>
+
+    <section class="btn">
+        <button class="btn__action" onclick="highlightText()">Search For The Result</button>
+</section>
+
+    <section class="result">
+        <div class="result__content" id="result"></div>
+</section>
     
     <script src="script.js"></script>
 </body>
