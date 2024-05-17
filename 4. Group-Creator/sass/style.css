@@ -22,6 +22,10 @@ body {
   width: 100%;
   cursor: pointer;
 }
+.container__info {
+  padding-bottom: 0.4rem;
+  text-align: center;
+}
 
 .button {
   padding-top: 1rem;

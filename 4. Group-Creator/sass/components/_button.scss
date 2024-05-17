@@ -7,6 +7,11 @@
             @include border;
             cursor: $hover;
     }
+
+    &__info {
+        padding-bottom: $padding;
+        text-align: center;
+    }
 }
 
 .button {
